@@ -1,0 +1,15 @@
+<div class="seccion pl-5 pr-5" [ngClass]="{'centrar-left': link, 'centrar': !link}">
+
+    <blockquote class="blockquote" *ngIf="link">
+
+      <p class="mb-0">{{ parrafo }}</p>
+
+      <footer class="blockquote-footer">{{ footer }}</footer>
+
+      <a routerLink="/contacto" class="btn btn-success">Contacto</a>
+
+    </blockquote>
+
+    <h1 class="text-white text-shadow" *ngIf="!link">{{ parrafo }}</h1>
+
+</div>

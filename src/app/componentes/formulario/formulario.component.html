@@ -1,0 +1,59 @@
+<form ngNativeValidate #f="ngForm" (ngSubmit)="enviar(f)">
+
+  <div class="form-group">
+
+    <label for="nombre">Nombre</label>
+
+    <input type="text" class="form-control" id="nombre" name="nombre" [ngModel]='nombre' placeholder="* Nombre" aria-describedby="nombreHelp" required>
+
+    <small id="nombreHelp" class="form-text text-muted">Por favor ingrese su nombre, este campo no puede ir vacío.</small>
+
+  </div>
+
+  <div class="form-group">
+
+    <label for="tel">Teléfono</label>
+
+    <input type="text" class="form-control" id="tel" name="tel" [ngModel]='tel' placeholder="* Teléfono" aria-describedby="telHelp" required>
+
+    <small id="telHelp" class="form-text text-muted">Por favor ingrese su teléfono, este campo no puede ir vacío.</small>
+
+  </div>
+
+  <div class="form-group">
+
+    <label for="email">Email</label>
+
+    <input type="email" class="form-control" id="email" name="email" [ngModel]='email' placeholder="* Email" aria-describedby="emailHelp" required>
+
+    <small id="emailHelp" class="form-text text-muted">Por favor ingrese su email, este campo no puede ir vacío.</small>
+
+  </div>
+
+  <div class="form-group">
+
+    <label for="mensaje">Mensaje</label>
+
+    <textarea class="form-control" name="mensaje" id="mensaje" cols="30" rows="10" [ngModel]='mensaje' placeholder="* Mensaje" aria-describedby="mensajeHelp" required></textarea>
+
+    <small id="mensajeHelp" class="form-text text-muted">Por favor ingrese su mensaje, este campo no puede ir vacío.</small>
+
+  </div>
+
+  <div class="form-group">
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+
+  </div>
+
+  <div class="form-group">
+
+    <div class="alert alert-danger" role="alert" *ngIf="error">Error al enviar el email, favor de realizar su contacto por llamada.</div>
+
+    <div class="alert alert-success" role="alert" *ngIf="correcto">Email enviado.</div>
+
+    <div class="alert alert-info" role="alert" *ngIf="enviando">Enviando email.</div>
+
+  </div>
+
+</form>

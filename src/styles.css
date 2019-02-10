@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+.centrar {
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    align-items: center!important;
+    height: 100%;
+}
+
+.centrar-sinCol {
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+.centrar-left {
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    align-items: left!important;
+    height: 100%;
+}
+
+.seccion {
+    background-image: url('assets/banners/banner1.jpg');
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 1px black;
+}
+
+.listas {
+    list-style: none;
+    padding-left: 0px!important;
+    margin-bottom: 0px!important;
+}
+
+.listas-item {
+    padding: 8px;
+    font-weight: 350;
+}
+
+#galeria {
+    margin: 1rem auto;
+    width:100%;
+    max-width:960px;
+    column-count: 3;
+}
+
+.bg-urologia {
+    background: #01579B;
+}

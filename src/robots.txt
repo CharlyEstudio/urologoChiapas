@@ -1,0 +1,9 @@
+User-agent: Googlebot
+Disallow: /controladores/
+Disallow: /extensiones/
+Disallow: /modelos/
+
+User-agent: *
+Allow: /
+
+Sitemap: http://www.urologochiapas.com/sitemap.xml
